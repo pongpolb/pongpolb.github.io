@@ -1,0 +1,275 @@
+@import 'colors';
+
+$header-bg-color: #222;
+$header-color: #fff;
+
+html,
+body {
+	font-family: 'Roboto', serif, sans-serif;
+	font-size: 20px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+p {
+	line-height: 1.5;
+
+	span {
+		color: $flat-green-1;
+	}
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid $flat-gray-4;
+	margin-bottom: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4rem;
+	width: 60%;
+}
+
+.wrapper {
+	height: 100%;
+}
+
+.app {
+	height: auto;
+	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
+}
+
+.header {
+	background-color: $header-bg-color;
+	color: $header-color;
+	padding: 1em;
+	text-align: center;
+
+}
+
+.body {
+	height: 100%;
+	min-height: 100%;
+	padding: 1em 1em 15em;
+}
+
+.footer {
+	background: $flat-gray-1;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+
+	ul {
+		display: flex;
+		justify-content: center;
+  }
+
+	li {
+		display: inline-block;
+		list-style: none;
+		margin-left: 7px;
+		margin-right: 7px;
+  }
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+
+.btn {
+	text-decoration: none;
+}
+
+.btn:hover,
+.btn:visited,
+.btn:active,
+.btn:link {
+	text-decoration: none;
+}
+
+.btn-link {
+	color: $flat-green-1;
+}
+
+.btn-menu {
+	color: $flat-green-1;
+	font-weight: bold;
+	padding: .5em;
+}
+
+.tag {
+	background-color: $flat-orange-1;
+	color: #fff;
+	display: inline-block;
+	font-size: .8em;
+	font-weight: normal;
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 6px;
+	margin-right: 2px;
+	margin-top: 4px;
+	padding: 0 6px;
+	text-decoration: none;
+}
+
+.tag-menu {
+	background-color: $flat-orange-1;
+	color: #fff;
+	display: inline-block;
+	font-size: .9rem;
+	font-weight: normal;
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 6px;
+	margin-left: 8px;
+	margin-top: 10px;
+	padding: 0 4px;
+	text-decoration: none;
+}
+
+.highlight {
+	background-color: $flat-orange-1;
+	color: #fff;
+	padding: .2rem .4rem;
+}
+
+.logo {
+	animation: app-logo-spin infinite 30s linear;
+	height: 80px;
+	width: 120px;
+}
+
+@keyframes app-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.self-intro {
+	padding-top: 80px;
+}
+
+.blog-block {
+	padding-bottom: 30px;
+
+	.blog-name {
+		font-size: 24px;
+	}
+
+	.publish-time {
+		color: $flat-gray-4;
+		padding-bottom: .2em;
+	}
+
+	.tag {
+		margin-top: .4em;
+	}
+}
+
+.blog-header {
+	padding-bottom: 3em;
+	padding-top: 1em;
+	text-align: center;
+
+	.sub-blog-header {
+		color: $flat-gray-4;
+	}
+
+	.tag-menu {
+		font-size: 1em;
+		padding: .2em;
+	}
+}
+
+.notfound {
+	color: #333;
+	font-size: 1.1em;
+	margin: 0 auto;
+	padding: 1em;
+
+	@media screen and (min-width: 40em) {
+		width: 40em;
+	}
+
+	h1 {
+		border-bottom: 1px dotted #ccc;
+		font-size: 3em;
+		line-height: 1.1em;
+		margin: 1em 0;
+		padding: 0 0 .25em;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 1.8em;
+		margin: 1em 0 .45em;
+		padding: 0;
+	}
+
+	p {
+		line-height: 1.8em;
+		margin: 0 0 .5em;
+
+		b {
+			color: $flat-red-1;
+		}
+	}
+
+	ol li {
+		font-size: .9em;
+		line-height: 1.8em;
+		margin: 0 0 .5em;
+	}
+
+	a {
+		color: $flat-blue-1;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	code {
+		background-color: #f8f8f8;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		display: inline-block;
+		font-size: .9em;
+		line-height: 1;
+		padding: .1em;
+  }
+
+	.firebase-logo {
+		display: block;
+		margin: 3em 0;
+		text-align: center;
+	}
+
+	.row {
+		text-align: center;
+	}
+}
